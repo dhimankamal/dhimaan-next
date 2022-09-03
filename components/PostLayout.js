@@ -33,7 +33,7 @@ export default function PostLayout ({ pageData }) {
       <div className='py-4'>
         <h2 className='text-3xl font-bold'>Watch Video</h2>
         <p>
-          Hey What's going on everybody, it's Dhiman back with most requested
+          Hey Whats going on everybody, its Dhiman back with most requested
           video on our channel {pageData.title}
         </p>
         <div className='py-6'>
