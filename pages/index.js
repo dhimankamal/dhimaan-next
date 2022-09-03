@@ -24,11 +24,15 @@ export default function Home () {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main>
-        <ul className='flex justify-between flex-col space-y-8 text-xl items-center py-10'>
+        <ul className='flex justify-between flex-col text-xl items-center py-10 space-y-4 text-center mx-10'>
           {data.map((value, index) => (
-            <li key={index} className='border py-4 px-8 border-black hover:bg-black hover:text-white'>
+            <li key={index} className='w-full'>
               <Link href={value.link}>
-                <a>{value.title}</a>
+                <a>
+                  <div className='border px-2 py-8 border-black hover:bg-black hover:text-white w-full text-sm md:text-2xl'>
+                    {value.title}
+                  </div>
+                </a>
               </Link>
             </li>
           ))}

@@ -14,7 +14,7 @@ function MyApp ({ Component, pageProps }) {
             content='initial-scale=1.0, width=device-width'
           />
         </Head>
-      <div>
+      <div className='flex flex-col h-screen justify-between'>
         <Navbar />
         <Component {...pageProps} />
         <Footer />
