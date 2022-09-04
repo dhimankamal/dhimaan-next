@@ -14,12 +14,12 @@ export default function Navbar () {
           </Link>
         </li>
         <li>
-          <Link href='/ioswhatsapp'>
+          <Link href='/iosinstagram'>
             <a>Instagram</a>
           </Link>
         </li>
         <li>
-          <Link href='/ioswhatsapp'>
+          <Link href='/iossnapchat'>
             <a>Snapchat</a>
           </Link>
         </li>

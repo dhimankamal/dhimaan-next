@@ -36,16 +36,18 @@ export default function PostLayout ({ pageData }) {
           Hey Whats going on everybody, its Dhiman back with most requested
           video on our channel {pageData.title}
         </p>
-        <div className='py-6'>
-          <iframe
-            width='100%'
-            height='360'
-            src='https://www.youtube.com/embed/PI6TyFVMfPQ?controls=0'
-            title='YouTube video player'
-            frameBorder='0'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-            allowFullScreen
-          ></iframe>
+        <div className='py-6 '>
+          <div className='iframe-container'>
+            <iframe
+              width='100%'
+              height='600'
+              src='https://www.youtube.com/embed/PI6TyFVMfPQ?controls=0'
+              title='YouTube video player'
+              frameBorder='0'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
       </div>
       <div className='py-4'>
