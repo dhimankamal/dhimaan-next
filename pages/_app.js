@@ -1,11 +1,13 @@
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
-import '../styles/globals.css'
+import Footer from 'components/Footer'
+import Navbar from 'components/Navbar'
+import 'styles/globals.css'
 import Head from 'next/head'
+import NextNProgress from "nextjs-progressbar";
 
 function MyApp ({ Component, pageProps }) {
   return (
     <>
+       <NextNProgress   color="#000" />
      <Head>
           <title>Dhimaan</title>
           <meta charSet='utf-8' />
