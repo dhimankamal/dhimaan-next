@@ -4,6 +4,7 @@ import { iosWhatsappData } from 'utils/data'
 import { NextSeo } from 'next-seo'
 
 export default function Whatsapp () {
+  console.log("image+++++++",  iosWhatsappData.imageUrl)
   return (
     <>
       <NextSeo
@@ -20,7 +21,7 @@ export default function Whatsapp () {
       video on our channel ${iosWhatsappData.title}`,
           images: [
             {
-              url: iosWhatsappData.imageUrl,
+              url: 'https://dhimaan-next.vercel.app/' + iosWhatsappData.imageUrl.src,
               width: 1920,
               height: 1080,
               alt: iosWhatsappData.title
