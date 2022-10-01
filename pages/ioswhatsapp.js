@@ -21,7 +21,7 @@ export default function Whatsapp () {
       video on our channel ${iosWhatsappData.title}`,
           images: [
             {
-              url: 'https://dhimaan-next.vercel.app/' + iosWhatsappData.imageUrl.src,
+              url: 'https://dhimaan-next.vercel.app' + iosWhatsappData.imageUrl.src,
               width: 1920,
               height: 1080,
               alt: iosWhatsappData.title
