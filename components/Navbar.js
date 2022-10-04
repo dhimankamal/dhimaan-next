@@ -54,7 +54,7 @@ export default function Navbar () {
               </Link>
             </li>
           ))}
-          <li className='border py-4 px-8 border-black'>
+          <li key={'contsct'} className='border py-4 px-8 border-black'>
             <Link href='/'>
               <a>Contact us</a>
             </Link>
