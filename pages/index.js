@@ -22,7 +22,9 @@ export default function Home () {
       <Head>
         <title>Dhimaan</title>
         <link rel='icon' href='/favicon.ico' />
-        <NextSeo
+      
+      </Head>
+      <NextSeo
           title='Dhimaan'
           titleTemplate='Dhiman'
           defaultTitle='Dhiman'
@@ -42,7 +44,6 @@ export default function Home () {
             Review,Nova Setups and Android Customisations.`
           }}
         />
-      </Head>
       <main>
         <div className='flex items-center w-full justify-center text-center pt-10'>
           <h1 className='text-4xl font-bold'>Turn Android Into iPhone</h1>
