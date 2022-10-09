@@ -8,4 +8,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  purge: ['./pages/*.js', './components/*.js']
 }

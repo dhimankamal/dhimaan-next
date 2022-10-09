@@ -54,7 +54,7 @@ export default function Home () {
             <li key={index} className='w-full'>
               <Link href={value.link}>
                 <a>
-                  <div className='border px-2 py-8 border-black hover:bg-black hover:text-white w-full text-sm md:text-2xl'>
+                  <div className='border px-2 py-8 border-black dark:border-white hover:bg-black hover:text-white w-full text-sm md:text-2xl'>
                     {value.title}
                   </div>
                 </a>
@@ -63,7 +63,7 @@ export default function Home () {
           ))}
         </ul>
 
-        <div className='py-4 text-center'>
+        <div className='p-4 text-center'>
           <h2 className='text-3xl font-bold'>About</h2>
           <p>
             Dhiman Kamal is a multi-platform technology Channel. We make videos

@@ -2,17 +2,19 @@ import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import MobileMenu from './Nav/MobileMenu'
+import { useTheme } from 'next-themes'
 
 export default function Navbar () {
-  const activeClass = 'border-b-2 border-black transition-all'
+  const activeClass = 'border-b-2 border-black dark:border-white transition-all'
   const [isActive, setIsActive] = useState(false)
   const handleClick = () => setIsActive(!isActive)
   const { pathname } = useRouter()
+  const { theme, setTheme } = useTheme()
 
   useEffect(() => {
     setIsActive(false)
   }, [pathname])
-  
+
   const menu = [
     {
       title: 'Home',
@@ -38,7 +40,7 @@ export default function Navbar () {
 
   return (
     <>
-      <nav className='mx-4 md:mx-10 flex justify-between py-10 border-b border-black items-center px-2 z-20'>
+      <nav className='mx-4 md:mx-10 flex justify-between py-10 border-b border-black dark:border-white items-center px-2 z-20'>
         <div className='text-3xl md:text-5xl font-bold z-10'>
           <span>Dhiman</span>
         </div>
@@ -54,10 +56,23 @@ export default function Navbar () {
               </Link>
             </li>
           ))}
-          <li key={'contsct'} className='border py-4 px-8 border-black'>
+          <li
+            key={'contsct'}
+            className='border py-4 px-8 border-black dark:border-white'
+          >
             <Link href='/'>
               <a>Contact us</a>
             </Link>
+          </li>
+          <li>
+            <button
+              aria-label='Toggle Dark Mode'
+              type='button'
+              className='p-3 h-12 w-12 order-2 md:order-3'
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            >
+              {theme}
+            </button>
           </li>
         </ul>
       </nav>
