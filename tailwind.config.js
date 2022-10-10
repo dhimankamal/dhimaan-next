@@ -8,5 +8,6 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-  purge: ['./pages/*.js', './components/*.js']
+  purge: ['./pages/*.js', './components/*.js'],
+  darkMode: "class"
 }

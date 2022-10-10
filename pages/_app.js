@@ -8,18 +8,19 @@ import { ThemeProvider } from 'next-themes'
 function MyApp ({ Component, pageProps }) {
   return (
     <>
+   
+      <ThemeProvider attribute='class'>
       <NextNProgress color='#000' />
       <Head>
         <title>Dhimaan</title>
         <meta charSet='utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
-      <ThemeProvider attribute="class">
-      <div className='flex flex-col h-screen justify-between'>
-        <Navbar />
-        <Component {...pageProps} />
-        <Footer />
-      </div>
+        <div className='flex flex-col h-screen justify-between'>
+          <Navbar />
+          <Component {...pageProps} />
+          <Footer />
+        </div>
       </ThemeProvider>
     </>
   )
