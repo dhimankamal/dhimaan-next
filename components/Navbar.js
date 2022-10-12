@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import MobileMenu from './Nav/MobileMenu'
 import { useTheme } from 'next-themes'
+import LightDarkToggel from './Nav/LightDarkToggel'
 
 export default function Navbar () {
   const activeClass = 'border-b-2 border-black dark:border-white transition-all'
@@ -40,7 +41,7 @@ export default function Navbar () {
 
   return (
     <>
-      <nav className='mx-4 md:mx-10 flex justify-between py-10 border-b border-black dark:border-white items-center px-2 z-20'>
+      <nav className='mx-4 md:mx-10 flex justify-between py-6 md:py-10 border-b border-black dark:border-white items-center px-2 z-20'>
         <div className='text-3xl md:text-5xl font-bold z-10'>
           <span>Dhiman</span>
         </div>
@@ -65,19 +66,12 @@ export default function Navbar () {
             </Link>
           </li>
           <li>
-            <button
-              aria-label='Toggle Dark Mode'
-              type='button'
-              className='p-3 h-12 w-12 order-2 md:order-3'
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            >
-              {theme}
-            </button>
+            <LightDarkToggel />
           </li>
         </ul>
       </nav>
       {isActive && (
-        <div className='bg-white w-screen h-screen absolute top-0 left-0 z-10 flex items-center justify-center'>
+        <div className='bg-white dark:bg-black w-screen h-screen absolute top-0 left-0 z-10 flex items-center justify-center'>
           <ul className='flex flex-col justify-between space-y-8 text-2xl items-center'>
             {menu.map(({ title, link, key }) => (
               <li key={key} className={pathname === link ? activeClass : ''}>
@@ -90,6 +84,9 @@ export default function Navbar () {
               <Link href='/'>
                 <a>Contact us</a>
               </Link>
+            </li>
+            <li>
+            <LightDarkToggel />
             </li>
           </ul>
         </div>
