@@ -43,7 +43,7 @@ export default function Navbar () {
     <>
       <nav className='mx-4 md:mx-10 flex justify-between py-6 md:py-10 border-b border-black dark:border-white items-center px-2 z-20'>
         <div className='text-3xl md:text-5xl font-bold z-10'>
-          <span>Dhiman</span>
+          <span>Dhimaan</span>
         </div>
         <div className='z-10 md:hidden'>
           <MobileMenu isActive={isActive} handleClick={handleClick} />
