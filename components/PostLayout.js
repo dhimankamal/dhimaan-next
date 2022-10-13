@@ -3,14 +3,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 import LiteYouTubeEmbed from 'react-lite-youtube-embed'
+import Head from 'next/head'
 
 export default function PostLayout ({ pageData }) {
   return (
     <main className='px-4 text-center py-10 md:w-10/12 my-0 mx-auto'>
+      <Head>
+        <link rel='preload' href={pageData.imageUrl.src} as='image' />
+      </Head>
       <NextSeo
         title={pageData.title}
         titleTemplate={pageData.title}
         defaultTitle={pageData.title}
+        imageUrl={pageData.imageUrl.src}
         description={`Hey Whats going on everybody, its Dhiman back with most requested
       video on our channel ${pageData.title}`}
         canonical='https://www.dhimaan.in/'
@@ -61,10 +66,7 @@ export default function PostLayout ({ pageData }) {
           video on our channel {pageData.title}
         </p>
         <div className='py-6 '>
-          <LiteYouTubeEmbed
-            id={pageData.videoId}
-            title={pageData.title}
-          />
+          <LiteYouTubeEmbed id={pageData.videoId} title={pageData.title} />
         </div>
       </div>
       <div className='py-4'>
