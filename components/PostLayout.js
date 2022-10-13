@@ -35,7 +35,7 @@ export default function PostLayout ({ pageData }) {
       </div>
 
       <div className='py-10'>
-        <Image src={pageData.imageUrl} alt='Picture of the author' />
+        <Image src={pageData.imageUrl} alt={pageData.title} sizes='100vw' />
       </div>
 
       <div>
@@ -63,18 +63,8 @@ export default function PostLayout ({ pageData }) {
         <div className='py-6 '>
           <LiteYouTubeEmbed
             id={pageData.videoId}
-            title='What’s new in Material Design for the web (Chrome Dev Summit 2019)'
+            title={pageData.title}
           />
-          {/* <div className='iframe-container'>
-            <iframe
-              width='100%'
-              height='600'
-              src={pageData.videoUrl}
-              title='YouTube video player'
-              frameBorder='0'
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-            ></iframe>
-          </div> */}
         </div>
       </div>
       <div className='py-4'>
