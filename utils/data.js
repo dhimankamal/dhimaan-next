@@ -4,7 +4,7 @@ import SnapchatImage from 'assets/snapchat.jpeg'
 import MessengerImage from 'assets/messenger.jpeg'
 
 export let iosWhatsappData = {
-    title: 'iOS WhatsApp On Any Android',
+    title: 'iOS WhatsApp On Any Android phone',
     dateUpdated: '13 Aug 2022',
     imageUrl: WhatsAppImage,
     videoUrl : 'https://www.youtube.com/embed/PI6TyFVMfPQ?controls=0',
@@ -35,7 +35,7 @@ export let iosWhatsappData = {
   }
 
   export let iosSnapchatData = {
-    title: 'iOS SnapChat On Any Android',
+    title: 'iOS SnapChat On Any Android phone',
     dateUpdated: '13 Aug 2022',
     videoUrl : 'https://www.youtube.com/embed/w-KA29iASBs',
     imageUrl: SnapchatImage,
@@ -61,7 +61,7 @@ export let iosWhatsappData = {
   }
 
   export let iosInstagramData = {
-    title: 'iOS Instagram On Any Android',
+    title: 'iOS Instagram On Any Android phone',
     dateUpdated: '24 July 2022',
     videoUrl : 'https://www.youtube.com/embed/GlBVpNJaTFw',
     imageUrl: InstagramImage,
@@ -97,7 +97,7 @@ export let iosWhatsappData = {
   }
 
   export let iosMessengerData = {
-    title: 'iOS Messenger For Android',
+    title: 'iOS Messenger For Android phone',
     dateUpdated: '17 Sep 2022',
     videoUrl : 'https://www.youtube.com/embed/i5w9BztR7wU',
     imageUrl: MessengerImage,

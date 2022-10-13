@@ -1,10 +1,33 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { NextSeo } from 'next-seo'
 
 export default function PostLayout ({ pageData }) {
   return (
     <main className='px-4 text-center py-10 md:w-10/12 my-0 mx-auto'>
+      <NextSeo
+        title={pageData.title}
+        titleTemplate={pageData.title}
+        defaultTitle={pageData.title}
+        description={`Hey Whats going on everybody, its Dhiman back with most requested
+      video on our channel ${pageData.title}`}
+        canonical='https://www.dhimaan.in/'
+        openGraph={{
+          url: 'https://www.dhimaan.in/',
+          title: pageData.title,
+          description: `Hey Whats going on everybody, its Dhiman back with most requested
+      video on our channel ${pageData.title}`,
+          images: [
+            {
+              url: 'https://dhimaan-next.vercel.app' + pageData.imageUrl.src,
+              width: 1920,
+              height: 1080,
+              alt: pageData.title
+            }
+          ]
+        }}
+      />
       <div>
         <h1 className='text-4xl font-bold mb-4'>{pageData.title}</h1>
         <span className=''>Last Updated: {pageData.dateUpdated}</span>
@@ -45,7 +68,6 @@ export default function PostLayout ({ pageData }) {
               title='YouTube video player'
               frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-            
             ></iframe>
           </div>
         </div>
