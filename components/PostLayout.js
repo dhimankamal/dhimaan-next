@@ -8,9 +8,6 @@ import Head from 'next/head'
 export default function PostLayout ({ pageData }) {
   return (
     <main className='px-4 text-center py-10 md:w-10/12 my-0 mx-auto'>
-      <Head>
-        <link rel='preload' href={pageData.imageUrl.src} as='image' />
-      </Head>
       <NextSeo
         title={pageData.title}
         titleTemplate={pageData.title}
