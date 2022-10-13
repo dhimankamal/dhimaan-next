@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import MobileMenu from './Nav/MobileMenu'
-import { useTheme } from 'next-themes'
 import LightDarkToggel from './Nav/LightDarkToggel'
 
 export default function Navbar () {
@@ -10,7 +9,6 @@ export default function Navbar () {
   const [isActive, setIsActive] = useState(false)
   const handleClick = () => setIsActive(!isActive)
   const { pathname } = useRouter()
-  const { theme, setTheme } = useTheme()
 
   useEffect(() => {
     setIsActive(false)
@@ -36,6 +34,11 @@ export default function Navbar () {
       title: 'Snapchat',
       link: '/iossnapchat',
       key: 'iossnapchat'
+    },
+    {
+      title: 'Messenger',
+      link: '/iosmessenger',
+      key: 'iosmessenger'
     }
   ]
 

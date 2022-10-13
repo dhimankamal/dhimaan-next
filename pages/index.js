@@ -15,6 +15,10 @@ export default function Home () {
     {
       title: 'iOS Snapchat',
       link: '/ioswhatsapp'
+    },
+    {
+      title: 'iOS Messenger',
+      link: '/iosmessenger'
     }
   ]
   return (

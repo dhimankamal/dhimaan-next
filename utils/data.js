@@ -1,6 +1,7 @@
 import WhatsAppImage from 'assets/whatsapp.jpg'
 import InstagramImage from 'assets/instagram.jpeg'
 import SnapchatImage from 'assets/snapchat.jpeg'
+import MessengerImage from 'assets/messenger.jpeg'
 
 export let iosWhatsappData = {
     title: 'iOS WhatsApp On Any Android',
@@ -93,4 +94,30 @@ export let iosWhatsappData = {
     ],
     tags:
       'Dhiman Kamal,iOS instagram For Android,iPhone instagram For Android,iOS instagram On Android,iPhone 13 instagram For Android,iOS 15 Theme For Instagram,iOS Instagram,iOS instagram New Update,iPhone instagram,instagram Update,instagram Hidden Features'
+  }
+
+  export let iosMessengerData = {
+    title: 'iOS Messenger For Android',
+    dateUpdated: '17 Sep 2022',
+    videoUrl : 'https://www.youtube.com/embed/i5w9BztR7wU',
+    imageUrl: MessengerImage,
+    dataLinks: [
+      {
+        title: 'Messenger 2022',
+        link:
+          'https://www.dhimankamal.com/2022/09/ios-facebook-messenger-for-android.html?m=1'
+      },
+      {
+        title: 'Messenger 2021 (iOS Fonts)',
+        link:
+          'https://www.dhimankamal.com/2021/07/iphone-style-messenger-for-android-ios_10.html?m=1'
+      },
+      {
+        title: 'Messenger 2021(iOS Emojis)',
+        link:
+          'https://www.dhimankamal.com/2021/07/iphone-style-messenger-for-android-ios.html?m=1'
+      }
+    ],
+    tags:
+      'Dhiman Kamal,iOS Messenger For Android,iPhone Messenger For Android,iOS Messenger On Android,iPhone 13 Messenger For Android,iOS 15 Theme For Messenger,iOS Messenger,iOS Messenger New Update,iPhone Messenger,Messenger Update,Messenger Hidden Features'
   }
