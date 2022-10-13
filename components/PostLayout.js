@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
+import LiteYouTubeEmbed from 'react-lite-youtube-embed'
 
 export default function PostLayout ({ pageData }) {
   return (
@@ -60,7 +61,11 @@ export default function PostLayout ({ pageData }) {
           video on our channel {pageData.title}
         </p>
         <div className='py-6 '>
-          <div className='iframe-container'>
+          <LiteYouTubeEmbed
+            id={pageData.videoId}
+            title='What’s new in Material Design for the web (Chrome Dev Summit 2019)'
+          />
+          {/* <div className='iframe-container'>
             <iframe
               width='100%'
               height='600'
@@ -69,7 +74,7 @@ export default function PostLayout ({ pageData }) {
               frameBorder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
             ></iframe>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className='py-4'>

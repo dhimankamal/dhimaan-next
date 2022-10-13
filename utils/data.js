@@ -8,6 +8,7 @@ export let iosWhatsappData = {
     dateUpdated: '13 Aug 2022',
     imageUrl: WhatsAppImage,
     videoUrl : 'https://www.youtube.com/embed/PI6TyFVMfPQ?controls=0',
+    videoId:'PI6TyFVMfPQ' ,
     dataLinks: [
       {
         title: 'iOS WhatsApp (v9.35) On Any Android',
@@ -38,6 +39,7 @@ export let iosWhatsappData = {
     title: 'iOS SnapChat On Any Android phone',
     dateUpdated: '13 Aug 2022',
     videoUrl : 'https://www.youtube.com/embed/w-KA29iASBs',
+    videoId:'w-KA29iASBs' ,
     imageUrl: SnapchatImage,
     dataLinks: [
       {
@@ -64,6 +66,7 @@ export let iosWhatsappData = {
     title: 'iOS Instagram On Any Android phone',
     dateUpdated: '24 July 2022',
     videoUrl : 'https://www.youtube.com/embed/GlBVpNJaTFw',
+    videoId:'GlBVpNJaTFw' ,
     imageUrl: InstagramImage,
     dataLinks: [
       {
@@ -100,6 +103,7 @@ export let iosWhatsappData = {
     title: 'iOS Messenger For Android phone',
     dateUpdated: '17 Sep 2022',
     videoUrl : 'https://www.youtube.com/embed/i5w9BztR7wU',
+    videoId:'i5w9BztR7wU' ,
     imageUrl: MessengerImage,
     dataLinks: [
       {
