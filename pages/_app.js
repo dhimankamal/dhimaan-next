@@ -9,11 +9,11 @@ function MyApp ({ Component, pageProps }) {
   let schema = `{
     "@context": "https://schema.org/",
     "@type": "WebSite",
-    name: "Dhimaan",
-    url: "https://www.dhimaan.in/",
-    potentialAction: {
+    "name": "Dhimaan",
+    "url": "https://www.dhimaan.in/",
+    "potentialAction": {
       "@type": "SearchAction",
-      target: "https://www.dhimaan.in/{search_term_string}",
+      "target": "https://www.dhimaan.in/{search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }`
