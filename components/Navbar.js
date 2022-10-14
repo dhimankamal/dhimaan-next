@@ -48,11 +48,11 @@ export default function Navbar () {
         <div className='text-3xl md:text-5xl font-bold z-10'>
           <span>Dhimaan</span>
         </div>
-        <div className='z-10 md:hidden'>
+        <div className='z-10 lg:hidden'>
           <MobileMenu isActive={isActive} handleClick={handleClick} />
         </div>
 
-        <ul className='hidden md:flex justify-between space-x-8 text-xl items-center'>
+        <ul className='hidden lg:flex justify-between space-x-8 text-xl items-center'>
           {menu.map(({ title, link, key }) => (
             <li key={key} className={pathname === link ? activeClass : ''}>
               <Link href={link}>

@@ -58,7 +58,7 @@ export default function Home () {
             <li key={index} className='w-full'>
               <Link href={value.link}>
                 <a>
-                  <div className='border px-2 py-8 border-black dark:border-white hover:bg-black dark:hover:bg-neutral-600 hover:text-white w-full text-sm md:text-2xl'>
+                  <div className='border px-2 py-8 border-black dark:border-white hover:bg-black dark:hover:bg-neutral-600 hover:text-white w-full text-sm md:text-2xl transition-color duration-500'>
                     {value.title}
                   </div>
                 </a>

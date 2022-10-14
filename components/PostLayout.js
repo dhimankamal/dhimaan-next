@@ -3,13 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 import LiteYouTubeEmbed from 'react-lite-youtube-embed'
-import Head from 'next/head'
 
 export default function PostLayout ({ pageData }) {
   return (
     <main className='px-4 text-center py-10 md:w-10/12 my-0 mx-auto'>
       <NextSeo
-        title={pageData.title}
+        title={pageData.title + '- dhimaan'}
         titleTemplate={pageData.title}
         defaultTitle={pageData.title}
         imageUrl={pageData.imageUrl.src}
@@ -36,7 +35,7 @@ export default function PostLayout ({ pageData }) {
         <span className=''>Last Updated: {pageData.dateUpdated}</span>
       </div>
 
-      <div className='py-10'>
+      <div className='my-10 p-4 border border-black dark:border-white'>
         <Image src={pageData.imageUrl} alt={pageData.title} sizes='100vw' />
       </div>
 
@@ -47,7 +46,7 @@ export default function PostLayout ({ pageData }) {
             <li key={index} className='w-full'>
               <Link href={value.link}>
                 <a>
-                  <div className='border px-2 py-8 border-black dark:border-white hover:bg-black dark:hover:bg-neutral-600 hover:text-white w-full text-sm md:text-2xl'>
+                  <div className='border px-2 py-8 border-black dark:border-white hover:bg-black dark:hover:bg-neutral-600 hover:text-white w-full text-sm md:text-2xl transition-color duration-500'>
                     {value.title}
                   </div>
                 </a>
@@ -62,7 +61,7 @@ export default function PostLayout ({ pageData }) {
           Hey Whats going on everybody, its Dhiman back with most requested
           video on our channel {pageData.title}
         </p>
-        <div className='py-6 '>
+        <div className='my-6 p-4 border border-black dark:border-white'>
           <LiteYouTubeEmbed id={pageData.videoId} title={pageData.title} />
         </div>
       </div>
