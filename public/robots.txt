@@ -1,1 +1,9 @@
+# *
 User-agent: *
+Allow: /
+
+# Host
+Host: https://www.dhimaan.in/
+
+# Sitemaps
+Sitemap: https://www.dhimaan.in/sitemap.xml
