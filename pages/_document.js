@@ -1,12 +1,25 @@
-import React from "react";
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import React from 'react'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class SpecialDocument extends Document {
-  render() {
+  render () {
     return (
       <Html>
-        <Head >
-        <link
+        <Head>
+          <script type='application/ld+json'>
+            {`{
+                "@context": "https://schema.org/",
+                "@type": "WebSite",
+                "name": "Dhimaan",
+                "url": "https://www.dhimaan.in/",
+                "potentialAction": {
+                  "@type": "SearchAction",
+                  "target": "https://www.dhimaan.in/{search_term_string}",
+                  "query-input": "required name=search_term_string"
+                }
+              }`}
+          </script>
+          <link
             rel='apple-touch-icon'
             sizes='57x57'
             href='apple-icon-57x57.png'
@@ -76,14 +89,14 @@ class SpecialDocument extends Document {
             href='favicon-16x16.png'
           />
           <link rel='manifest' href='/manifest.json' />
-          </Head>
-        <body className="bg-white text-black dark:bg-black dark:text-white">
+        </Head>
+        <body className='bg-white text-black dark:bg-black dark:text-white'>
           <Main />
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }
 
-export default SpecialDocument;
+export default SpecialDocument
