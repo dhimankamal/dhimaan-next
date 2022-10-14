@@ -6,19 +6,6 @@ class SpecialDocument extends Document {
     return (
       <Html>
         <Head>
-          <script type='application/ld+json'>
-            {`{
-                "@context": "https://schema.org/",
-                "@type": "WebSite",
-                "name": "Dhimaan",
-                "url": "https://www.dhimaan.in/",
-                "potentialAction": {
-                  "@type": "SearchAction",
-                  "target": "https://www.dhimaan.in/{search_term_string}",
-                  "query-input": "required name=search_term_string"
-                }
-              }`}
-          </script>
           <link
             rel='apple-touch-icon'
             sizes='57x57'
