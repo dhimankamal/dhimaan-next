@@ -77,7 +77,7 @@ class SpecialDocument extends Document {
           />
           <link rel='manifest' href='/manifest.json' />
         </Head>
-        <body className='bg-white text-black dark:bg-black dark:text-white'>
+        <body className='bg-white text-black dark:bg-black dark:text-white transition-colors duration-300'>
           <Main />
           <NextScript />
         </body>
