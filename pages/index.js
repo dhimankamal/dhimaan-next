@@ -10,11 +10,11 @@ export default function Home () {
     },
     {
       title: 'iOS Instagram',
-      link: '/ioswhatsapp'
+      link: '/iosinstagram'
     },
     {
       title: 'iOS Snapchat',
-      link: '/ioswhatsapp'
+      link: '/iossnapchat'
     },
     {
       title: 'iOS Messenger',
