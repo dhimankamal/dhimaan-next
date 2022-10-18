@@ -1,16 +1,18 @@
 import React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 
 class SpecialDocument extends Document {
   render () {
     return (
       <Html>
         <Head>
-          <script
+          <Script
             async
             src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446438232158113'
             crossOrigin='anonymous'
-          ></script>
+            strategy='lazyOnload'
+          ></Script>
           <link
             rel='apple-touch-icon'
             sizes='57x57'
