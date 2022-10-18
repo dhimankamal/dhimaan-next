@@ -24,30 +24,26 @@ export default function Home () {
   return (
     <div>
       <Head>
-        <title>Dhimaan</title>
+        <title>Covert any andoid phone to iphone - dhimaan</title>
         <link rel='icon' href='/favicon.ico' />
-      
       </Head>
       <NextSeo
-          title='Dhimaan'
-          titleTemplate='Dhiman'
-          defaultTitle='Dhiman'
-          description='Dhiman Kamal is a multi-platform technology Channel. We make videos
-          for everyone, not just for techies. And we post them everywhere.
-          Subscribe for a decent helping of tech features, first look and
-          hands-on videos, unboxings, gadget reviews, tips, tricks,Rom
-          Review,Nova Setups and Android Customisations.'
-          canonical='https://www.dhimaan.in/'
-          openGraph={{
-            url: 'https://www.dhimaan.in/',
-            title: 'Turn Android Into iPhone',
-            description: `Dhiman Kamal is a multi-platform technology Channel. We make videos
+        title='Covert any andoid phone to iphone - dhimaan'
+        titleTemplate='Covert any andoid phone to iphone - dhimaan'
+        defaultTitle='Covert any andoid phone to iphone - dhimaan'
+        description='Dhiman Kamal is a multi-platform technology Channel. We make videos
+          for everyone, not just for techies.'
+        canonical='https://www.dhimaan.in/'
+        openGraph={{
+          url: 'https://www.dhimaan.in/',
+          title: 'Covert any andoid phone to iphone - dhimaan',
+          description: `Dhiman Kamal is a multi-platform technology Channel. We make videos
             for everyone, not just for techies. And we post them everywhere.
             Subscribe for a decent helping of tech features, first look and
             hands-on videos, unboxings, gadget reviews, tips, tricks,Rom
             Review,Nova Setups and Android Customisations.`
-          }}
-        />
+        }}
+      />
       <main>
         <div className='flex items-center w-full justify-center text-center pt-10'>
           <h1 className='text-4xl font-bold'>Turn Android Into iPhone</h1>
