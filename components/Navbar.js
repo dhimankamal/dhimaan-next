@@ -64,7 +64,7 @@ export default function Navbar () {
             key={'contsct'}
             className='border py-4 px-8 border-black dark:border-white'
           >
-            <Link href='/'>
+            <Link href='/contact'>
               <a>Contact us</a>
             </Link>
           </li>
@@ -84,7 +84,7 @@ export default function Navbar () {
               </li>
             ))}
             <li>
-              <Link href='/'>
+              <Link href='/contact'>
                 <a>Contact us</a>
               </Link>
             </li>
