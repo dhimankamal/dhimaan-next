@@ -7,12 +7,7 @@ class SpecialDocument extends Document {
     return (
       <Html>
         <Head>
-          <Script
-            async
-            src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446438232158113'
-            crossOrigin='anonymous'
-            strategy='beforeInteractive'
-          ></Script>
+        
           <link
             rel='apple-touch-icon'
             sizes='57x57'
