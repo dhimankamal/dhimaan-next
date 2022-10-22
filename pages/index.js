@@ -33,7 +33,6 @@ export default function Home () {
         defaultTitle='Covert any andoid phone to iphone - dhimaan'
         description='Dhiman Kamal is a multi-platform technology Channel. We make videos
           for everyone, not just for techies.'
-        canonical='https://www.dhimaan.in/'
         openGraph={{
           url: 'https://www.dhimaan.in/',
           title: 'Covert any andoid phone to iphone - dhimaan',
