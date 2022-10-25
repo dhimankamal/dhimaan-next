@@ -3,8 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 import LiteYouTubeEmbed from 'react-lite-youtube-embed'
+import { useRouter } from 'next/router'
 
 export default function PostLayout ({ pageData }) {
+  const router = useRouter()
+  const canonicalUrl = router.pathname
+  
   return (
     <main className='px-4 text-center py-10 md:w-10/12 my-0 mx-auto'>
       <NextSeo
@@ -14,7 +18,7 @@ export default function PostLayout ({ pageData }) {
         imageUrl={pageData.imageUrl.src}
         description={`Hey Whats going on everybody, its Dhiman back with most requested
       video on our channel ${pageData.title}`}
-        canonical='https://www.dhimaan.in/'
+        canonical={'https://www.dhimaan.in' + canonicalUrl}
         openGraph={{
           url: 'https://www.dhimaan.in/',
           title: pageData.title,
