@@ -7,7 +7,6 @@ class SpecialDocument extends Document {
     return (
       <Html>
         <Head>
-        
           <link
             rel='apple-touch-icon'
             sizes='57x57'
@@ -78,6 +77,11 @@ class SpecialDocument extends Document {
             href='favicon-16x16.png'
           />
           <link rel='manifest' href='/manifest.json' />
+          <Script
+            async
+            src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446438232158113'
+            crossOrigin='anonymous'
+          ></Script>
         </Head>
         <body className='bg-white text-black dark:bg-black dark:text-white transition-colors duration-300'>
           <Main />
