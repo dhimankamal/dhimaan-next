@@ -5,11 +5,16 @@ import MessengerImage from 'assets/messenger.jpeg'
 
 export let iosWhatsappData = {
     title: 'iOS WhatsApp On Any Android phone',
-    dateUpdated: '16 Oct 2022',
+    dateUpdated: '13 Nov 2022',
     imageUrl: WhatsAppImage,
     videoUrl : 'https://www.youtube.com/embed/PI6TyFVMfPQ?controls=0',
     videoId:'PI6TyFVMfPQ' ,
     dataLinks: [
+      {
+        title: 'iOS WhatsApp v9.45',
+        link:
+          'https://www.dhimankamal.com/2022/11/ios-16-whatsapp-for-android-v945.html'
+      },
       {
         title: 'iOS WhatsApp v9.41',
         link:
