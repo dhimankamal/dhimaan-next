@@ -6,7 +6,7 @@ import NextNProgress from 'nextjs-progressbar'
 import { ThemeProvider } from 'next-themes'
 import Script from 'next/script'
 
-function MyApp ({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   let schema = `{
     "@context": "https://schema.org/",
     "@type": "WebSite",
@@ -35,6 +35,7 @@ function MyApp ({ Component, pageProps }) {
         });
     `}
       </Script>
+
       <ThemeProvider attribute='class'>
         <NextNProgress color='#000' />
         <Head>
@@ -48,7 +49,10 @@ function MyApp ({ Component, pageProps }) {
         </Head>
         <div className='flex flex-col h-screen justify-between'>
           <Navbar />
+          <script async="async" data-cfasync="false" src="//sophomoreprimarilyprey.com/63595e2931c8170375f135cb9e3c14ed/invoke.js"></script>
+          <div className='px-4 text-center py-10 md:w-10/12 my-0 mx-auto' id="container-63595e2931c8170375f135cb9e3c14ed"></div>
           <Component {...pageProps} />
+
           <Footer />
         </div>
       </ThemeProvider>

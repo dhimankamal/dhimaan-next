@@ -82,6 +82,8 @@ class SpecialDocument extends Document {
             src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2446438232158113'
             crossOrigin='anonymous'
           ></Script>
+          
+
         </Head>
         <body className='bg-white text-black dark:bg-black dark:text-white transition-colors duration-300'>
           <Main />

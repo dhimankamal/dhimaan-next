@@ -6,18 +6,16 @@ import LiteYouTubeEmbed from 'react-lite-youtube-embed'
 import { useRouter } from 'next/router'
 import Script from 'next/script'
 
-export default function PostLayout ({ pageData }) {
+export default function PostLayout({ pageData }) {
   const router = useRouter()
   const canonicalUrl = router.pathname
 
   return (
     <>
-   
-        <Script
-          type='text/javascript'
-          src='//sophomoreprimarilyprey.com/59/fc/0f/59fc0feead007c83836dff2e17d4c6d4.js'
-        ></Script>
-     
+      <Script
+        type='text/javascript'
+        src='//sophomoreprimarilyprey.com/59/fc/0f/59fc0feead007c83836dff2e17d4c6d4.js'
+      ></Script>
       <main className='px-4 text-center py-10 md:w-10/12 my-0 mx-auto'>
         <NextSeo
           title={pageData.title + '- dhimaan'}
@@ -42,6 +40,7 @@ export default function PostLayout ({ pageData }) {
             ]
           }}
         />
+
         <div>
           <h1 className='text-4xl font-bold mb-4'>{pageData.title}</h1>
           <span className=''>Last Updated: {pageData.dateUpdated}</span>
