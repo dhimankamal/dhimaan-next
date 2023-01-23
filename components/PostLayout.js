@@ -60,7 +60,7 @@ export default function PostLayout({ pageData }) {
           <ul className='flex justify-between flex-col text-xl items-center py-10 space-y-4'>
             {pageData.dataLinks.map((value, index) => (
               <li key={index} className='w-full'>
-                <Link href={value.link}>
+                <Link href={value.link} target="_blank">
                   <a>
                     <div className='border px-2 py-8 border-black dark:border-white hover:bg-black dark:hover:bg-neutral-600 hover:text-white w-full text-sm md:text-2xl transition-color duration-500'>
                       {value.title}

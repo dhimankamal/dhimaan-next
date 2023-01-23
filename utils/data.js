@@ -1,15 +1,20 @@
-import WhatsAppImage from 'assets/whatsapp.jpg'
+import WhatsAppImage from 'assets/whatsapp.jpeg'
 import InstagramImage from 'assets/instagram.jpeg'
 import SnapchatImage from 'assets/snapchat.jpeg'
 import MessengerImage from 'assets/messenger.jpeg'
 
 export let iosWhatsappData = {
     title: 'iOS WhatsApp On Any Android phone',
-    dateUpdated: '13 Nov 2022',
+    dateUpdated: '23 Jan 2023',
     imageUrl: WhatsAppImage,
     videoUrl : 'https://www.youtube.com/embed/PI6TyFVMfPQ?controls=0',
-    videoId:'PI6TyFVMfPQ' ,
+    videoId:'qcri_VF1KMA' ,
     dataLinks: [
+      {
+        title: 'iOS WhatsApp For Android // v9.54',
+        link:
+          'https://www.dhimankamal.com/2023/01/ios-whatsapp-for-android-v954.html'
+      },
       {
         title: 'iOS WhatsApp v9.45',
         link:
