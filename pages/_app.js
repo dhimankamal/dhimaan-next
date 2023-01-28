@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
   }`
   return (
     <>
-      {/* <Script
+      <Script
         strategy='lazyOnload'
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
         page_path: window.location.pathname,
         });
     `}
-      </Script> */}
+      </Script>
 
       <ThemeProvider attribute='class'>
         <NextNProgress color='#000' />
@@ -50,8 +50,8 @@ function MyApp({ Component, pageProps }) {
         <div className='flex flex-col h-screen justify-between'>
           <Navbar />
 
-          {/* <script async="async" data-cfasync="false" src="//sophomoreprimarilyprey.com/63595e2931c8170375f135cb9e3c14ed/invoke.js"></script>
-          <div className='px-4 text-center py-10 md:w-10/12 my-0 mx-auto' id="container-63595e2931c8170375f135cb9e3c14ed"></div> */}
+          <script async="async" data-cfasync="false" src="//sophomoreprimarilyprey.com/63595e2931c8170375f135cb9e3c14ed/invoke.js"></script>
+          <div className='px-4 text-center py-10 md:w-10/12 my-0 mx-auto' id="container-63595e2931c8170375f135cb9e3c14ed"></div>
           <Component {...pageProps} />
 
           <Footer />

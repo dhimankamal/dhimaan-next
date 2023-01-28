@@ -10,17 +10,17 @@ export default function PostLayout({ pageData }) {
   const router = useRouter()
   const canonicalUrl = router.pathname
 
-  // useEffect(() => {
-  //   window.open('https://sophomoreprimarilyprey.com/b026a1rh4?key=dcdc1ea6128d4d3575fe4643be334772', '_blank');
-  // }, [])
+  useEffect(() => {
+    window.open('https://sophomoreprimarilyprey.com/b026a1rh4?key=dcdc1ea6128d4d3575fe4643be334772', '_blank');
+  }, [])
 
 
   return (
     <>
-      {/* <Script
+      <Script
         type='text/javascript'
         src='//sophomoreprimarilyprey.com/59/fc/0f/59fc0feead007c83836dff2e17d4c6d4.js'
-      ></Script> */}
+      ></Script>
       <main className='px-4 text-center py-10 md:w-10/12 my-0 mx-auto'>
         <NextSeo
           title={pageData.title + '- dhimaan'}
