@@ -128,11 +128,16 @@ export let iosMessengerData = {
 
 export const instaFlowData = {
   title: 'iOS Instaflow',
-  dateUpdated: '24 July 2022',
+  dateUpdated: '19 March 2023',
   videoUrl: 'https://www.youtube.com/embed/0VZXsfA4q7w',
   videoId: '0VZXsfA4q7w',
   imageUrl: instaflow,
   dataLinks: [
+    {
+      title: 'Insta Flow v11',
+      link:
+        'https://www.dhimankamal.com/2023/03/ios-instaflow-v11-ios-emojis-for.html'
+    },
     {
       title: 'Insta Flow v8',
       link:
