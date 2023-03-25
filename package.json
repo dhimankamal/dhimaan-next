@@ -12,7 +12,9 @@
     "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
+    "@apollo/client": "^3.7.10",
     "framer-motion": "^10.9.1",
+    "graphql": "^16.6.0",
     "next": "13.2.4",
     "next-seo": "^5.5.0",
     "next-sitemap": "^4.0.6",
