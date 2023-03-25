@@ -1,27 +1,16 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 import LiteYouTubeEmbed from 'react-lite-youtube-embed'
 import { useRouter } from 'next/router'
-import Script from 'next/script'
 
 export default function PostLayout({ pageData }) {
   const router = useRouter()
   const canonicalUrl = router.pathname
-
-  useEffect(() => {
-    window.open('https://sophomoreprimarilyprey.com/b026a1rh4?key=dcdc1ea6128d4d3575fe4643be334772', '_blank');
-  }, [])
-
-
   return (
     <>
-      <Script
-        type='text/javascript'
-        src='//sophomoreprimarilyprey.com/59/fc/0f/59fc0feead007c83836dff2e17d4c6d4.js'
-      ></Script>
-      <main className='px-4 text-center py-10 md:w-10/12 my-0 mx-auto'>
+      <main className="px-4 text-center py-10 md:w-10/12 my-0 mx-auto">
         <NextSeo
           title={pageData.title + '- dhimaan'}
           titleTemplate={pageData.title}
@@ -40,65 +29,59 @@ export default function PostLayout({ pageData }) {
                 url: 'https://dhimaan-next.vercel.app' + pageData.imageUrl.src,
                 width: 1920,
                 height: 1080,
-                alt: pageData.title
-              }
-            ]
+                alt: pageData.title,
+              },
+            ],
           }}
         />
 
         <div>
-          <h1 className='text-4xl font-bold mb-4'>{pageData.title}</h1>
-          <span className=''>Last Updated: {pageData.dateUpdated}</span>
+          <h1 className="text-4xl font-bold mb-4">{pageData.title}</h1>
+          <span className="">Last Updated: {pageData.dateUpdated}</span>
         </div>
 
-        <div className='my-10 p-4 border border-black dark:border-white'>
-          <Image src={pageData.imageUrl} alt={pageData.title} sizes='100vw' />
+        <div className="my-10 p-4 border border-black dark:border-white">
+          <Image src={pageData.imageUrl} alt={pageData.title} sizes="100vw" />
         </div>
 
         <div>
-          <h2 className='text-3xl font-bold'>Latest Version</h2>
-          <ul className='flex justify-between flex-col text-xl items-center py-10 space-y-4'>
+          <h2 className="text-3xl font-bold">Latest Version</h2>
+          <ul className="flex justify-between flex-col text-xl items-center py-10 space-y-4">
             {pageData.dataLinks.map((value, index) => (
-              <li key={index} className='w-full'>
+              <li key={index} className="w-full">
                 <Link href={value.link} target="_blank">
-                  <a target="_blank">
-                    <div className='border px-2 py-8 border-black dark:border-white hover:bg-black dark:hover:bg-neutral-600 hover:text-white w-full text-sm md:text-2xl transition-color duration-500'>
-                      {value.title}
-                    </div>
-                  </a>
+                  {value.title}
                 </Link>
               </li>
             ))}
           </ul>
         </div>
-        {pageData?.addons && <div>
-          <h2 className='text-3xl font-bold'>Add ons</h2>
-          <ul className='flex justify-between flex-col text-xl items-center py-10 space-y-4'>
-            {pageData.addons.map((value, index) => (
-              <li key={index} className='w-full'>
-                <Link href={value.link} target="_blank">
-                  <a target="_blank">
-                    <div className='border px-2 py-8 border-black dark:border-white hover:bg-black dark:hover:bg-neutral-600 hover:text-white w-full text-sm md:text-2xl transition-color duration-500'>
-                      {value.title}
-                    </div>
-                  </a>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>}
-        <div className='py-4'>
-          <h2 className='text-3xl font-bold'>Watch Video</h2>
+        {pageData?.addons && (
+          <div>
+            <h2 className="text-3xl font-bold">Add ons</h2>
+            <ul className="flex justify-between flex-col text-xl items-center py-10 space-y-4">
+              {pageData.addons.map((value, index) => (
+                <li key={index} className="w-full">
+                  <Link href={value.link} target="_blank">
+                    {value.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+        <div className="py-4">
+          <h2 className="text-3xl font-bold">Watch Video</h2>
           <p>
             Hey Whats going on everybody, its Dhiman back with most requested
             video on our channel {pageData.title}
           </p>
-          <div className='my-6 p-4 border border-black dark:border-white'>
+          <div className="my-6 p-4 border border-black dark:border-white">
             <LiteYouTubeEmbed id={pageData.videoId} title={pageData.title} />
           </div>
         </div>
-        <div className='py-4'>
-          <h2 className='text-3xl font-bold'>About</h2>
+        <div className="py-4">
+          <h2 className="text-3xl font-bold">About</h2>
           <p>
             Dhiman Kamal is a multi-platform technology Channel. We make videos
             for everyone, not just for techies. And we post them everywhere.
@@ -107,8 +90,8 @@ export default function PostLayout({ pageData }) {
             Review,Nova Setups and Android Customisations.
           </p>
         </div>
-        <div className='py-4'>
-          <h2 className='text-3xl font-bold'>Tags</h2>
+        <div className="py-4">
+          <h2 className="text-3xl font-bold">Tags</h2>
           <p>{pageData.tags}</p>
         </div>
       </main>

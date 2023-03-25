@@ -1,14 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
 
-export default function Contact () {
+export default function Contact() {
   return (
     <>
-      <div className='text-center'>
-        <h1 className='text-4xl font-semibold mb-4'>Contact us</h1>
-        <Link href='mailto:contact@dhimaan.in'>
-          <a className='text-2xl'>contact@dhimaan.in</a>
-        </Link>
+      <div className="text-center">
+        <h1 className="text-4xl font-semibold mb-4">Contact us</h1>
+        <Link href="mailto:contact@dhimaan.in">contact@dhimaan.in</Link>
       </div>
 
       {/* <form className='w-full max-w-lg mx-auto'>

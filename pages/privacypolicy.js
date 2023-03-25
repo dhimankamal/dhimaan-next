@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Privacypolicy () {
+export default function Privacypolicy() {
   return (
     <>
-      <div className='p-10 space-y-4 md:px-40'>
-        <h1 className='text-4xl font-bold text-center'>
+      <div className="p-10 space-y-4 md:px-40">
+        <h1 className="text-4xl font-bold text-center">
           Privacy Policy for dhimaan.in
         </h1>
         <p>
@@ -23,17 +23,17 @@ export default function Privacypolicy () {
           shared and/or collect in dhimaan. This policy is not applicable to any
           information collected offline or via channels other than this website.
           Our Privacy Policy was created with the help of the{' '}
-          <a href='https://www.privacypolicygenerator.info/'>
+          <a href="https://www.privacypolicygenerator.info/">
             Free Privacy Policy Generator
           </a>
           .
         </p>
-        <h2 className='text-2xl font-semibold'>Consent</h2>
+        <h2 className="text-2xl font-semibold">Consent</h2>
         <p>
           By using our website, you hereby consent to our Privacy Policy and
           agree to its terms.
         </p>
-        <h2 className='text-2xl font-semibold'>Information we collect</h2>
+        <h2 className="text-2xl font-semibold">Information we collect</h2>
         <p>
           The personal information that you are asked to provide, and the
           reasons why you are asked to provide it, will be made clear to you at
@@ -50,7 +50,7 @@ export default function Privacypolicy () {
           information, including items such as name, company name, address,
           email address, and telephone number.
         </p>
-        <h2 className='text-2xl font-semibold'>How we use your information</h2>
+        <h2 className="text-2xl font-semibold">How we use your information</h2>
         <p>We use the information we collect in various ways, including to:</p>
         <ul>
           <li>Provide, operate, and maintain our website</li>
@@ -66,19 +66,19 @@ export default function Privacypolicy () {
           <li>Send you emails</li>
           <li>Find and prevent fraud</li>
         </ul>
-        <h2 className='text-2xl font-semibold'>Log Files</h2>
+        <h2 className="text-2xl font-semibold">Log Files</h2>
         <p>
           dhimaan follows a standard procedure of using log files. These files
           log visitors when they visit websites. All hosting companies do this
-          and a part of hosting services analytics. The information collected
-          by log files include internet protocol (IP) addresses, browser type,
+          and a part of hosting services analytics. The information collected by
+          log files include internet protocol (IP) addresses, browser type,
           Internet Service Provider (ISP), date and time stamp, referring/exit
           pages, and possibly the number of clicks. These are not linked to any
           information that is personally identifiable. The purpose of the
           information is for analyzing trends, administering the site, tracking
           users movement on the website, and gathering demographic information.
         </p>
-        <h2 className='text-2xl font-semibold'>Cookies and Web Beacons</h2>
+        <h2 className="text-2xl font-semibold">Cookies and Web Beacons</h2>
         <p>
           Like any other website, dhimaan uses cookies. These cookies are used
           to store information including visitor preferences, and the pages on
@@ -86,7 +86,9 @@ export default function Privacypolicy () {
           used to optimize the users experience by customizing our web page
           content based on visitors browser type and/or other information.
         </p>
-        <h2 className='text-2xl font-semibold'>Google DoubleClick DART Cookie</h2>
+        <h2 className="text-2xl font-semibold">
+          Google DoubleClick DART Cookie
+        </h2>
         <p>
           Google is one of a third-party vendor on our site. It also uses
           cookies, known as DART cookies, to serve ads to our site visitors
@@ -94,11 +96,13 @@ export default function Privacypolicy () {
           internet. However, visitors may choose to decline the use of DART
           cookies by visiting the Google ad and content network Privacy Policy
           at the following URL –{' '}
-          <a href='https://policies.google.com/technologies/ads'>
+          <a href="https://policies.google.com/technologies/ads">
             https://policies.google.com/technologies/ads
           </a>
         </p>
-        <h2 className='text-2xl font-semibold'>Advertising Partners Privacy Policies</h2>
+        <h2 className="text-2xl font-semibold">
+          Advertising Partners Privacy Policies
+        </h2>
         <p>
           You may consult this list to find the Privacy Policy for each of the
           advertising partners of dhimaan.
@@ -116,7 +120,7 @@ export default function Privacypolicy () {
           Note that dhimaan has no access to or control over these cookies that
           are used by third-party advertisers.
         </p>
-        <h2 className='text-2xl font-semibold'>Third Party Privacy Policies</h2>
+        <h2 className="text-2xl font-semibold">Third Party Privacy Policies</h2>
         <p>
           dhimaan Privacy Policy does not apply to other advertisers or
           websites. Thus, we are advising you to consult the respective Privacy
@@ -127,10 +131,12 @@ export default function Privacypolicy () {
         <p>
           You can choose to disable cookies through your individual browser
           options. To know more detailed information about cookie management
-          with specific web browsers, it can be found at the browsers
-          respective websites.
+          with specific web browsers, it can be found at the browsers respective
+          websites.
         </p>
-        <h2 className='text-2xl font-semibold'>CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
+        <h2 className="text-2xl font-semibold">
+          CCPA Privacy Rights (Do Not Sell My Personal Information)
+        </h2>
         <p>
           Under the CCPA, among other rights, California consumers have the
           right to:
@@ -145,14 +151,14 @@ export default function Privacypolicy () {
           that a business has collected.
         </p>
         <p>
-          Request that a business that sells a consumer personal data, not
-          sell the consumer personal data.
+          Request that a business that sells a consumer personal data, not sell
+          the consumer personal data.
         </p>
         <p>
           If you make a request, we have one month to respond to you. If you
           would like to exercise any of these rights, please contact us.
         </p>
-        <h2 className='text-2xl font-semibold'>GDPR Data Protection Rights</h2>
+        <h2 className="text-2xl font-semibold">GDPR Data Protection Rights</h2>
         <p>
           We would like to make sure you are fully aware of all of your data
           protection rights. Every user is entitled to the following:
@@ -189,7 +195,7 @@ export default function Privacypolicy () {
           If you make a request, we have one month to respond to you. If you
           would like to exercise any of these rights, please contact us.
         </p>
-        <h2 className='text-2xl font-semibold'>Children Information</h2>
+        <h2 className="text-2xl font-semibold">Children Information</h2>
         <p>
           Another part of our priority is adding protection for children while
           using the internet. We encourage parents and guardians to observe,
