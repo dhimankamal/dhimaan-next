@@ -58,7 +58,7 @@ export default function Home() {
         }}
       />
       <main className="">
-        <div className='p-8 mt-4 bg-neutral-100 dark:bg-neutral-900'>
+        <div className="p-8 mt-4 bg-neutral-100 dark:bg-neutral-900">
           <h1 className="text-4xl font-bold">Turn Android Into iPhone</h1>
           <p>
             Website dedicated to providing users with detailed information on
@@ -114,7 +114,8 @@ export default function Home() {
           })}
         </div>
 
-        <div className="p-4 text-center">
+        <div className="p-8 my-4 bg-neutral-100 dark:bg-neutral-900 ">
+          <div className='w-5/6'>
           <h2 className="text-3xl font-bold">About</h2>
           <p>
             Dhiman Kamal is a multi-platform technology Channel. We make videos
@@ -123,6 +124,9 @@ export default function Home() {
             hands-on videos, unboxings, gadget reviews, tips, tricks,Rom
             Review,Nova Setups and Android Customisations.
           </p>
+
+          </div>
+      
         </div>
       </main>
     </div>

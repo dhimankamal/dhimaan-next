@@ -1,5 +1,12 @@
 const Blog = ({}) => {
-  return <div>blogs</div>
+  return <div></div>
+}
+
+export const getServerSideProps = async (ctx) => {
+  
+  return {
+    props: {}
+  }
 }
 
 export default Blog

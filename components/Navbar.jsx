@@ -4,6 +4,8 @@ import { useRouter } from 'next/router'
 import MobileMenu from './Nav/MobileMenu'
 import LightDarkToggel from './Nav/LightDarkToggel'
 import Logo from '../assets/logo.png'
+import LogoWhite from '../assets/logowhite.png'
+
 import Image from 'next/image'
 
 export default function Navbar() {
@@ -23,23 +25,34 @@ export default function Navbar() {
       key: 'home',
     },
     {
-      title: 'Privacy Policy',
-      link: '/privacypolicy',
-      key: 'privacypolicyp',
+      title: 'Blog',
+      link: '/blog',
+      key: 'blog',
     },
+
     {
       title: 'About',
       link: '/about',
       key: 'about',
     },
+    {
+      title: 'Privacy Policy',
+      link: '/privacypolicy',
+      key: 'privacypolicyp',
+    },
   ]
 
   return (
     <>
-      <nav className="sticky dark:bg-black top-0 shadow-sm dark:shadow-stone-900 z-20 backdrop-blur-xl bg-white/80">
+      <nav className="sticky dark:bg-black/90 top-0 shadow-sm dark:shadow-stone-900 z-20 backdrop-blur-xl bg-white/80">
         <div className="container mx-auto flex justify-between py-2 md:py-4 items-center ">
           <Link href="/" className="text-3xl md:text-3xl font-bold z-10">
-            <Image src={Logo} alt="logo" className="w-10" />
+            <Image src={Logo} alt="logo" className="w-10 dark:hidden" />
+            <Image
+              src={LogoWhite}
+              alt="logo"
+              className="w-10 hidden dark:block"
+            />
           </Link>
           <div className="z-10 lg:hidden">
             <MobileMenu isActive={isActive} handleClick={handleClick} />
