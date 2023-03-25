@@ -57,17 +57,18 @@ export default function Home() {
             Review,Nova Setups and Android Customisations.`,
         }}
       />
-      <main className="text-center">
-        <div className="flex items-center w-full justify-center text-center pt-10">
-          <h1 className="text-3xl font-bold">Turn Android Into iPhone</h1>
+      <main className="">
+        <div className='p-8 mt-4 bg-neutral-100 dark:bg-neutral-900'>
+          <h1 className="text-4xl font-bold">Turn Android Into iPhone</h1>
+          <p>
+            Website dedicated to providing users with detailed information on
+            how to customize their Android device to look and feel like an
+            iPhone.
+          </p>
         </div>
-        <p>
-          {' '}
-          Website dedicated to providing users with detailed information on how
-          to customize their Android device to look and feel like an iPhone.
-        </p>
+
         <div className="flex flex-col gap-4 mt-8">
-          {allData.map(({ title, imageUrl, dateUpdated }, key) => {
+          {allData.map(({ title, imageUrl, dateUpdated, slug }, key) => {
             return (
               <div
                 className="border p-4 text-left grid grid-cols-2 gap-4"
@@ -95,8 +96,13 @@ export default function Home() {
                       out a new look and feel for their{' '}
                     </p>
 
-                    <div className="border py-4 px-8 border-black dark:border-white">
-                      <Link href="/">Download Here</Link>
+                    <div className="!mt-8">
+                      <Link
+                        href={slug || '/'}
+                        className="border py-4 px-8 border-black dark:border-white hover:bg-black transition-all duration-300 hover:text-white"
+                      >
+                        Download Here
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -107,19 +113,6 @@ export default function Home() {
             )
           })}
         </div>
-        {/* <ul className='flex justify-between flex-col text-xl items-center py-10 space-y-4 text-center mx-10'>
-          {data.map((value, index) => (
-            <li key={index} className='w-full'>
-              <Link href={value.link}>
-                <a>
-                  <div className='border px-2 py-8 border-black dark:border-white hover:bg-black dark:hover:bg-neutral-600 hover:text-white w-full text-sm md:text-2xl transition-color duration-500'>
-                    {value.title}
-                  </div>
-                </a>
-              </Link>
-            </li>
-          ))}
-        </ul> */}
 
         <div className="p-4 text-center">
           <h2 className="text-3xl font-bold">About</h2>

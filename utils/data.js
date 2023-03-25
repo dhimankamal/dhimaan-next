@@ -8,7 +8,7 @@ import instaflow from 'assets/instaflow.jpg'
 export let iosWhatsappData = {
   title: 'iOS WhatsApp On Any Android phone',
   description: '',
-  slug: '',
+  slug: 'ioswhatsapp',
   dateUpdated: '23 Jan 2023',
   imageUrl: WhatsAppImage,
   videoUrl: 'https://www.youtube.com/embed/PI6TyFVMfPQ?controls=0',

@@ -31,7 +31,10 @@ function MyApp({ Component, pageProps }) {
           />
         </Head>
         <Navbar />
-        <Component {...pageProps} />
+        <main className='container mx-auto px-2'>
+          <Component {...pageProps} />
+        </main>
+
         <Footer />
       </ThemeProvider>
     </>
