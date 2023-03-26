@@ -4,7 +4,6 @@ import Link from 'next/link'
 import client from 'service/client'
 
 const Blog = ({ data }) => {
-  console.log('data', data)
   return (
     <div className="flex flex-col gap-4 mt-8">
       {data.map(({ node }) => {
