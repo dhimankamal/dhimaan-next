@@ -1,19 +1,25 @@
-import { NextPage } from "next";
-import Link from "next/link";
+import { NextPage } from 'next'
+import Link from 'next/link'
 
-
-const Breadcrumb = ({ crumbs }) => {
+const Breadcrumb = ({ crumbs, dateUpdated }) => {
   return (
-    <div className="text-center">
-      <div className="p-8 lg:p-20 bg-white rounded-2xl dark:bg-neutral-800">
-        <h1 itemProp="headline"
-          className="text-2xl lg:text-5xl font-bold text-center mb-4"
-          dangerouslySetInnerHTML={{ __html: crumbs.at(-1)?.name || "" }}
-        ></h1>
+    <div className="">
+      <div className="p-8 bg-neutral-100 dark:bg-neutral-900 flex items-center justify-between">
+        <div>
+          <h1
+            itemProp="headline"
+            className="text-4xl font-bold"
+            dangerouslySetInnerHTML={{ __html: crumbs.at(-1)?.name || '' }}
+          ></h1>
+          {dateUpdated && (
+            <p className="mt-2">Last Updated: {dateUpdated}</p>
+          )}
+        </div>
+
         <ol
           itemScope
           itemType="https://schema.org/BreadcrumbList"
-          className="flex text-sm md:text-base flex-col gap-2 lg:flex-row justify-center items-center text-center"
+          className="flex text-sm md:text-base flex-col gap-2 lg:flex-row justify-start items-center text-center"
         >
           {crumbs.map((val, idx) => {
             return (
@@ -27,18 +33,18 @@ const Breadcrumb = ({ crumbs }) => {
                 <Link href={val.href} itemProp="item">
                   <span
                     itemProp="name"
-                    dangerouslySetInnerHTML={{ __html: val.name || "" }}
+                    dangerouslySetInnerHTML={{ __html: val.name || '' }}
                   ></span>
                   <meta itemProp="position" content={String(idx + 1)} />
-                  <span className="group-last:hidden">/</span>
+                  <span className="group-last:hidden ml-2">/</span>
                 </Link>
               </li>
-            );
+            )
           })}
         </ol>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Breadcrumb;
+export default Breadcrumb

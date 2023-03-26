@@ -1,4 +1,5 @@
 import { gql } from '@apollo/client'
+import Breadcrumb from 'components/Breadcrumbs'
 import Image from 'next/image'
 import Link from 'next/link'
 import client from 'service/client'
@@ -6,6 +7,12 @@ import client from 'service/client'
 const Blog = ({ data }) => {
   return (
     <div className="flex flex-col gap-4 mt-8">
+      <Breadcrumb
+        crumbs={[
+          { name: 'Home', href: '/' },
+          { name: 'Blog', href: '/' },
+        ]}
+      />
       {data.map(({ node }) => {
         const { date, excerpt, featuredImage, id, link, title } = node
         return (
@@ -71,9 +78,9 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      data:data,
+      data: data,
     },
-    revalidate: 100
+    revalidate: 100,
   }
 }
 
