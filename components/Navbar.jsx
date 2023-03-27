@@ -31,14 +31,19 @@ export default function Navbar() {
     },
 
     {
-      title: 'About',
+      title: 'About us',
       link: '/about',
       key: 'about',
     },
     {
+      title: 'Disclaimer',
+      link: '/disclaimer',
+      key: 'disclaimer',
+    },
+    {
       title: 'Privacy Policy',
       link: '/privacypolicy',
-      key: 'privacypolicyp',
+      key: 'privacypolicy',
     },
   ]
 

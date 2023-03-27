@@ -1,12 +1,16 @@
+import Breadcrumb from 'components/Breadcrumbs'
 import React from 'react'
 
 export default function Privacypolicy() {
   return (
-    <>
-      <div className="p-10 space-y-4 md:px-40">
-        <h1 className="text-4xl font-bold text-center">
-          Privacy Policy for dhimaan.in
-        </h1>
+    <div className="py-4 space-y-4">
+      <Breadcrumb
+        crumbs={[
+          { name: 'Home', href: '/' },
+          { name: 'Privacy Policy', href: '/privacypolicy' },
+        ]}
+      />
+      <div className="space-y-4 px-4">
         <p>
           At dhimaan, accessible from https://www.dhimaan.in/, one of our main
           priorities is the privacy of our visitors. This Privacy Policy
@@ -208,7 +212,24 @@ export default function Privacypolicy() {
           encourage you to contact us immediately and we will do our best
           efforts to promptly remove such information from our records.
         </p>
+        <h2 className="text-2xl font-semibold">
+          {' '}
+          Changes to our Privacy Policy{' '}
+        </h2>
+
+        <p>
+          We reserve the right to modify our privacy policy at any time. Changes
+          and clarifications will take effect immediately upon posting on our
+          website.
+        </p>
+        <h2 className="text-2xl font-semibold"> Contact Information</h2>
+
+        <p>
+          If you have any questions or concerns about our privacy policy, please
+          contact us at contact@dhimaan.in.
+        </p>
+        <p>By using our website, you consent to our privacy policy.</p>
       </div>
-    </>
+    </div>
   )
 }
