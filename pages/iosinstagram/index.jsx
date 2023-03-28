@@ -24,7 +24,7 @@ export default function HomeInstagram() {
       <Breadcrumb
         crumbs={[
           { name: 'Home', href: '/' },
-          { name: 'iOS Instagram On Any Android phone', href: '/' },
+          { name: 'iOS Instagram On Any Android phone', href: '/iosinstagram' },
         ]}
         dateUpdated="March"
       />

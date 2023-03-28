@@ -4,34 +4,34 @@ import 'styles/globals.css'
 import Head from 'next/head'
 import NextNProgress from 'nextjs-progressbar'
 import { ThemeProvider } from 'next-themes'
+import { DefaultSeo } from 'next-seo'
 
 function MyApp({ Component, pageProps }) {
-  let schema = `{
-    "@context": "https://schema.org/",
-    "@type": "WebSite",
-    "name": "Dhimaan",
-    "url": "https://www.dhimaan.in/",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://www.dhimaan.in/{search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }`
   return (
     <>
       <ThemeProvider attribute="class">
         <NextNProgress color="#000" />
-        <Head>
-          <script type="application/ld+json">{schema}</script>
-          <title>Dhimaan</title>
-          <meta charSet="utf-8" />
-          <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
-        </Head>
+        <DefaultSeo
+          title="Dhimaan"
+          description="Dhiman Kamal is a multi-platform technology Channel. We make
+          videos for everyone, not just for techies. And we post them
+          everywhere. Subscribe for a decent helping of tech features, first
+          look and hands-on videos, unboxings, gadget reviews, tips,
+          tricks,Rom Review,Nova Setups and Android Customisations."
+          openGraph={{
+            type: 'website',
+            locale: 'en_IE',
+            url: 'https://www.dhimaan.in/',
+            siteName: 'Dhimaan',
+          }}
+          // twitter={{
+          //   handle: "@handle",
+          //   site: "@",
+          //   cardType: "summary_large_image",
+          // }}
+        />
         <Navbar />
-        <main className='container mx-auto px-2'>
+        <main className="container mx-auto px-2">
           <Component {...pageProps} />
         </main>
 

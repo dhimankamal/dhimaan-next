@@ -4,15 +4,17 @@ import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 import Image from 'next/image'
 import LiteYouTubeEmbed from 'react-lite-youtube-embed'
-import { useRouter } from 'next/router'
 import Breadcrumb from 'components/Breadcrumbs'
 
 export default function Whatsapp() {
-  const router = useRouter()
-  const canonicalUrl = router.pathname
   return (
     <>
-     
+      <NextSeo
+        title={`${pageData?.title}| Dhimaan`}
+        description={pageData?.description}
+        canonical={`https://www.dhimaan.in/${pageData.slug}`}
+      />
+
       <div className="py-4">
         <Breadcrumb
           crumbs={[
@@ -184,7 +186,6 @@ export default function Whatsapp() {
               </p>
             </div>
           </div>
-          
         </div>
       </div>
     </>

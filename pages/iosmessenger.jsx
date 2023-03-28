@@ -5,10 +5,16 @@ import Breadcrumb from 'components/Breadcrumbs'
 import Image from 'next/image'
 import Link from 'next/link'
 import LiteYouTubeEmbed from 'react-lite-youtube-embed'
+import { NextSeo } from 'next-seo'
 
 export default function Messenger() {
   return (
     <>
+      <NextSeo
+        title={`${pageData?.title}| Dhimaan`}
+        description={pageData?.description}
+        canonical={`https://www.dhimaan.in/${pageData.slug}`}
+      />
       <div className="py-4">
         <Breadcrumb
           crumbs={[
