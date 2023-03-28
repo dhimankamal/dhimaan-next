@@ -89,6 +89,8 @@ export let iosInstagramData = {
 export let iosMessengerData = {
   title: 'iOS Messenger For Android phone',
   dateUpdated: '17 Sep 2022',
+  description:'Facebook Messenger is a popular messaging app used by millions of people around the world. While the app is available for both iOS and Android devices, some users have expressed frustration with the differences between the two versions. Specifically, some features that are available on iOS are not available on Android. However, two modified versions of Facebook Messenger are now available for Android users that include some of these missing features.',
+  slug:'iosmessenger',
   videoUrl: 'https://www.youtube.com/embed/i5w9BztR7wU',
   videoId: 'i5w9BztR7wU',
   imageUrl: MessengerImage,
