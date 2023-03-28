@@ -12,34 +12,12 @@ export default function Whatsapp() {
   const canonicalUrl = router.pathname
   return (
     <>
-      <NextSeo
-        title={pageData.title + '- dhimaan'}
-        titleTemplate={pageData.title}
-        defaultTitle={pageData.title}
-        imageUrl={pageData.imageUrl.src}
-        description={`Hey Whats going on everybody, its Dhiman back with most requested
-      video on our channel ${pageData.title}`}
-        canonical={'https://www.dhimaan.in' + canonicalUrl}
-        openGraph={{
-          url: 'https://www.dhimaan.in/',
-          title: pageData.title,
-          description: `Hey Whats going on everybody, its Dhiman back with most requested
-      video on our channel ${pageData.title}`,
-          images: [
-            {
-              url: 'https://dhimaan-next.vercel.app' + pageData.imageUrl.src,
-              width: 1920,
-              height: 1080,
-              alt: pageData.title,
-            },
-          ],
-        }}
-      />
+     
       <div className="py-4">
         <Breadcrumb
           crumbs={[
             { name: 'Home', href: '/' },
-            { name: pageData?.title, href: '/' },
+            { name: pageData?.title, href: '/ioswhatsapp' },
           ]}
           dateUpdated={pageData?.dateUpdated}
         />
@@ -182,9 +160,9 @@ export default function Whatsapp() {
               <ul className="flex justify-between flex-col text-xl items-center p-4 space-y-4">
                 {pageData.dataLinks.map((value, index) => (
                   <li key={index} className="w-full flex items-center gap-4">
-                    <div className="w-2 h-2 bg-black"></div>
+                    <div className="w-2 h-2 bg-black dark:bg-neutral-200"></div>
                     <Link href={value.link} target="_blank" className="w-full">
-                      <div className="p-4 bg-neutral-100 hover:bg-black dark:hover:bg-neutral-600 hover:text-white w-full text-sm md:text-xl transition-color duration-500">
+                      <div className="p-4 bg-neutral-100 dark:bg-neutral-900 hover:bg-black dark:hover:bg-neutral-600 hover:text-white w-full text-sm md:text-xl transition-color duration-500">
                         {value.title}
                       </div>
                     </Link>

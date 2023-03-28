@@ -117,9 +117,9 @@ export default function Messenger() {
               <ul className="flex justify-between flex-col text-xl items-center p-4 space-y-4">
                 {pageData.dataLinks.map((value, index) => (
                   <li key={index} className="w-full flex items-center gap-4">
-                    <div className="w-2 h-2 bg-black"></div>
+                    <div className="w-2 h-2 bg-black dark:bg-neutral-200"></div>
                     <Link href={value.link} target="_blank" className="w-full">
-                      <div className="p-4 bg-neutral-100 hover:bg-black dark:hover:bg-neutral-600 hover:text-white w-full text-sm md:text-xl transition-color duration-500">
+                      <div className="p-4 bg-neutral-100 dark:bg-neutral-900 hover:bg-black dark:hover:bg-neutral-600 hover:text-white w-full text-sm md:text-xl transition-color duration-500">
                         {value.title}
                       </div>
                     </Link>
