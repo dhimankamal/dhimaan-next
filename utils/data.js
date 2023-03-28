@@ -49,8 +49,8 @@ export let iosWhatsappData = {
 export let iosSnapchatData = {
   title: 'iOS SnapChat On Any Android phone',
   dateUpdated: '13 Aug 2022',
-  description:'Snapchat is one of the most popular social media platforms, allowing users to share photos and videos with their friends and followers. While Snapchat is available for both iOS and Android devices, some users have expressed frustration with the differences between the two versions. Specifically, some features that are available on iOS are not available on Android. However, two modified versions of Snapchat are now available for Android users that include some of these missing features.',
-  slug:'iossnapchat',
+  description: 'Snapchat is one of the most popular social media platforms, allowing users to share photos and videos with their friends and followers. While Snapchat is available for both iOS and Android devices, some users have expressed frustration with the differences between the two versions. Specifically, some features that are available on iOS are not available on Android. However, two modified versions of Snapchat are now available for Android users that include some of these missing features.',
+  slug: 'iossnapchat',
   videoUrl: 'https://www.youtube.com/embed/w-KA29iASBs',
   videoId: 'w-KA29iASBs',
   imageUrl: SnapchatImage,
@@ -72,6 +72,8 @@ export let iosSnapchatData = {
 }
 
 export let iosInstagramData = {
+  slug: 'iosinstagram',
+  description: "Instagram is one of the most popular social media platforms in the world, allowing users to share photos and videos with their friends and followers. While Instagram is available for both iOS and Android devices, some users have expressed frustration with the differences between the two versions. Specifically, some features that are available on iOS are not available on Android. However, a modified version of Instagram is now available for Android users that includes some of these missing features.",
   title: 'iOS Instagram On Any Android phone',
   dateUpdated: '24 July 2022',
   videoUrl: 'https://www.youtube.com/embed/5elrTqLACvU',
@@ -89,8 +91,8 @@ export let iosInstagramData = {
 export let iosMessengerData = {
   title: 'iOS Messenger For Android phone',
   dateUpdated: '17 Sep 2022',
-  description:'Facebook Messenger is a popular messaging app used by millions of people around the world. While the app is available for both iOS and Android devices, some users have expressed frustration with the differences between the two versions. Specifically, some features that are available on iOS are not available on Android. However, two modified versions of Facebook Messenger are now available for Android users that include some of these missing features.',
-  slug:'iosmessenger',
+  description: 'Facebook Messenger is a popular messaging app used by millions of people around the world. While the app is available for both iOS and Android devices, some users have expressed frustration with the differences between the two versions. Specifically, some features that are available on iOS are not available on Android. However, two modified versions of Facebook Messenger are now available for Android users that include some of these missing features.',
+  slug: 'iosmessenger',
   videoUrl: 'https://www.youtube.com/embed/i5w9BztR7wU',
   videoId: 'i5w9BztR7wU',
   imageUrl: MessengerImage,

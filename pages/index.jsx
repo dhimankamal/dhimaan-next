@@ -36,28 +36,8 @@ export default function Home() {
     iosMessengerData,
   ]
   return (
-    <div>
-      <Head>
-        <title>Covert any andoid phone to iphone - dhimaan</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <NextSeo
-        title="Covert any andoid phone to iphone - dhimaan"
-        titleTemplate="Covert any andoid phone to iphone - dhimaan"
-        defaultTitle="Covert any andoid phone to iphone - dhimaan"
-        description="Dhiman Kamal is a multi-platform technology Channel. We make videos
-          for everyone, not just for techies."
-        openGraph={{
-          url: 'https://www.dhimaan.in/',
-          title: 'Covert any andoid phone to iphone - dhimaan',
-          description: `Dhiman Kamal is a multi-platform technology Channel. We make videos
-            for everyone, not just for techies. And we post them everywhere.
-            Subscribe for a decent helping of tech features, first look and
-            hands-on videos, unboxings, gadget reviews, tips, tricks,Rom
-            Review,Nova Setups and Android Customisations.`,
-        }}
-      />
-      <main className="">
+    
+      <div className="">
         <div className="p-8 mt-4 bg-neutral-100 dark:bg-neutral-900">
           <h1 className="text-4xl font-bold">Turn Android Into iPhone</h1>
           <p>
@@ -72,9 +52,12 @@ export default function Home() {
             ({ title, imageUrl, description, dateUpdated, slug }, key) => {
               return (
                 <div
-                  className="border p-4 text-left grid grid-cols-2 gap-4"
+                  className="border p-4 text-left grid md:grid-cols-2 gap-4"
                   key={key}
                 >
+                   <div>
+                    <Image src={imageUrl} alt={title} sizes="100vw" />
+                  </div>
                   <div className="p-4 flex flex-col justify-between">
                     <div>
                       <div className="border-b pb-4">
@@ -96,9 +79,7 @@ export default function Home() {
                       </Link>
                     </div>
                   </div>
-                  <div>
-                    <Image src={imageUrl} alt={title} sizes="100vw" />
-                  </div>
+                 
                 </div>
               )
             },
@@ -117,7 +98,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+   
   )
 }

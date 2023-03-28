@@ -16,7 +16,16 @@ const Blog = ({ data }) => {
       {data.map(({ node }) => {
         const { date, excerpt, featuredImage, id, link, title } = node
         return (
-          <div className="border p-4 text-left grid grid-cols-2 gap-4" key={id}>
+          <div className="border p-4 text-left grid md:grid-cols-2 gap-4" key={id}>
+             <div>
+              <Image
+                src={featuredImage?.node?.sourceUrl}
+                alt={title}
+                width="1920"
+                height="1080"
+                sizes="100vw"
+              />
+            </div>
             <div className="p-4">
               <div className="border-b pb-4">
                 <h2 className="text-2xl font-semibold">{title}</h2>
@@ -34,15 +43,7 @@ const Blog = ({ data }) => {
                 </div>
               </div>
             </div>
-            <div>
-              <Image
-                src={featuredImage?.node?.sourceUrl}
-                alt={title}
-                width="1920"
-                height="1080"
-                sizes="100vw"
-              />
-            </div>
+           
           </div>
         )
       })}

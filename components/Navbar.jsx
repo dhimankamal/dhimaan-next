@@ -51,7 +51,7 @@ export default function Navbar() {
     <>
       <nav className="sticky dark:bg-black/90 top-0 shadow-sm dark:shadow-stone-900 z-20 backdrop-blur-xl bg-white/80">
         <div className="container mx-auto flex justify-between py-2 md:py-4 items-center ">
-          <Link href="/" className="text-3xl md:text-3xl font-bold z-10">
+          <Link href="/" className="text-3xl md:text-3xl font-bold z-10 px-2">
             <Image src={Logo} alt="logo" className="w-10 dark:hidden" />
             <Image
               src={LogoWhite}
@@ -82,7 +82,7 @@ export default function Navbar() {
         </div>
       </nav>
       {isActive && (
-        <div className="bg-white dark:bg-black w-screen h-screen absolute top-0 left-0 z-10 flex items-center justify-center">
+        <div className="bg-white dark:bg-black w-screen h-screen fixed top-0 bottom-0 left-0 z-10 flex items-center justify-center">
           <ul className="flex flex-col justify-between space-y-8 text-2xl items-center">
             {menu.map(({ title, link, key }) => (
               <li key={key} className={pathname === link ? activeClass : ''}>

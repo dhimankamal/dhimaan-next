@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Breadcrumb = ({ crumbs, dateUpdated }) => {
   return (
     <div className="">
-      <div className="p-8 bg-neutral-100 dark:bg-neutral-900 flex items-center justify-between">
+      <div className="p-8 bg-neutral-100 dark:bg-neutral-900 flex flex-col md:flex-row md:items-center md:justify-between">
         <div>
           <h1
             itemProp="headline"
@@ -19,7 +19,7 @@ const Breadcrumb = ({ crumbs, dateUpdated }) => {
         <ol
           itemScope
           itemType="https://schema.org/BreadcrumbList"
-          className="flex text-sm md:text-base flex-col gap-2 lg:flex-row justify-start items-center text-center"
+          className="flex text-sm md:text-base md:flex-col gap-2 lg:flex-row justify-start items-center text-center"
         >
           {crumbs.map((val, idx) => {
             return (
