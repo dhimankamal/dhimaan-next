@@ -43,8 +43,8 @@ export default function Whatsapp() {
           ]}
           dateUpdated={pageData?.dateUpdated}
         />
-        <div className="grid grid-cols-3 gap-4 py-4">
-          <div className="col-span-2 space-y-4">
+        <div className="grid  gap-4 py-4">
+          <div className=" space-y-4">
             <div className="p-4 border border-black dark:border-white">
               <Image
                 src={pageData.imageUrl}
@@ -62,7 +62,7 @@ export default function Whatsapp() {
                 how to bring the iOS look and feel to WhatsApp on Android using
                 FM WhatsApp, a modified version of the app.
               </p>
-              <h2 className="text-2xl font-bold">What is FM WhatsApp?</h2>
+              <h2 className="text-2xl font-bold pt-4">What is FM WhatsApp?</h2>
               <p>
                 FM WhatsApp is a modified version of the official WhatsApp app
                 that includes additional features not found in the original
@@ -73,7 +73,7 @@ export default function Whatsapp() {
                 from third-party sources and should exercise caution when doing
                 so.
               </p>
-              <h2 className="text-2xl font-bold">
+              <h2 className="text-2xl font-bold pt-4">
                 How to download and install iOS WhatsApp
               </h2>
               <p>
@@ -94,7 +94,7 @@ export default function Whatsapp() {
                 not be as secure as the official version of the app. It is
                 important to use caution when installing and using the app.
               </p>
-              <h2 className="text-2xl font-bold">
+              <h2 className="text-2xl font-bold pt-4">
                 How to apply iOS Theme to it?
               </h2>
               <p>
@@ -131,7 +131,7 @@ export default function Whatsapp() {
                   new look and feel of WhatsApp.
                 </li>
               </ul>
-              <h2 className="text-2xl font-bold">
+              <h2 className="text-2xl font-bold pt-4">
                 Other features of FM WhatsApp
               </h2>
               <p>
@@ -206,7 +206,7 @@ export default function Whatsapp() {
               </p>
             </div>
           </div>
-          <div className="border border-black"></div>
+          
         </div>
       </div>
     </>

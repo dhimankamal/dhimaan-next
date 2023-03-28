@@ -68,34 +68,25 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-4 mt-8">
-          {allData.map(({ title, imageUrl, dateUpdated, slug }, key) => {
-            return (
-              <div
-                className="border p-4 text-left grid grid-cols-2 gap-4"
-                key={key}
-              >
-                <div className="p-4">
-                  <div className="border-b pb-4">
-                    <h2 className="text-2xl font-semibold">{title}</h2>
-                    <span className="text-sm">Last Updated: {dateUpdated}</span>
-                  </div>
-                  <div className="space-y-4 mt-4">
-                    <p>
-                      Users can also find recommendations on the best iOS apps
-                      and widgets that can be downloaded and installed on their
-                      Android device to further enhance the iPhone-like
-                      experience. In addition, the website provides information
-                      on how to replicate some of the unique features of an
-                      iPhone, such as the Control Center and the Siri virtual
-                      assistant, on an Android device.
-                    </p>
-                    <p>
-                      With Dhimaan.in, Android users can now experience the look
-                      and feel of an iPhone without having to switch to iOS. The
-                      website is a valuable resource for anyone who wants to try
-                      out a new look and feel for their{' '}
-                    </p>
-
+          {allData.map(
+            ({ title, imageUrl, description, dateUpdated, slug }, key) => {
+              return (
+                <div
+                  className="border p-4 text-left grid grid-cols-2 gap-4"
+                  key={key}
+                >
+                  <div className="p-4 flex flex-col justify-between">
+                    <div>
+                      <div className="border-b pb-4">
+                        <h2 className="text-2xl font-semibold">{title}</h2>
+                        <span className="text-sm">
+                          Last Updated: {dateUpdated}
+                        </span>
+                      </div>
+                      <div className="space-y-4 mt-4">
+                        <p>{description}</p>
+                      </div>
+                    </div>
                     <div className="!mt-8">
                       <Link
                         href={slug || '/'}
@@ -105,28 +96,26 @@ export default function Home() {
                       </Link>
                     </div>
                   </div>
+                  <div>
+                    <Image src={imageUrl} alt={title} sizes="100vw" />
+                  </div>
                 </div>
-                <div>
-                  <Image src={imageUrl} alt={title} sizes="100vw" />
-                </div>
-              </div>
-            )
-          })}
+              )
+            },
+          )}
         </div>
 
         <div className="p-8 my-4 bg-neutral-100 dark:bg-neutral-900 ">
-          <div className='w-5/6'>
-          <h2 className="text-3xl font-bold">About</h2>
-          <p>
-            Dhiman Kamal is a multi-platform technology Channel. We make videos
-            for everyone, not just for techies. And we post them everywhere.
-            Subscribe for a decent helping of tech features, first look and
-            hands-on videos, unboxings, gadget reviews, tips, tricks,Rom
-            Review,Nova Setups and Android Customisations.
-          </p>
-
+          <div className="w-5/6">
+            <h2 className="text-3xl font-bold">About</h2>
+            <p>
+              Dhiman Kamal is a multi-platform technology Channel. We make
+              videos for everyone, not just for techies. And we post them
+              everywhere. Subscribe for a decent helping of tech features, first
+              look and hands-on videos, unboxings, gadget reviews, tips,
+              tricks,Rom Review,Nova Setups and Android Customisations.
+            </p>
           </div>
-      
         </div>
       </main>
     </div>

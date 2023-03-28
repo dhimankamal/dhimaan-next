@@ -7,7 +7,7 @@ import instaflow from 'assets/instaflow.jpg'
 
 export let iosWhatsappData = {
   title: 'iOS WhatsApp On Any Android phone',
-  description: '',
+  description: 'As one of the most popular messaging apps in the world, WhatsApp is used by millions of people every day to stay in touch with friends, family, and colleagues. While the app is available on both iOS and Android devices, the user experience can differ between the two operating systems. In this blog, we will explore how to bring the iOS look and feel to WhatsApp on Android using FM WhatsApp, a modified version of the app.',
   slug: 'ioswhatsapp',
   dateUpdated: '23 Jan 2023',
   imageUrl: WhatsAppImage,
@@ -49,6 +49,8 @@ export let iosWhatsappData = {
 export let iosSnapchatData = {
   title: 'iOS SnapChat On Any Android phone',
   dateUpdated: '13 Aug 2022',
+  description:'Snapchat is one of the most popular social media platforms, allowing users to share photos and videos with their friends and followers. While Snapchat is available for both iOS and Android devices, some users have expressed frustration with the differences between the two versions. Specifically, some features that are available on iOS are not available on Android. However, two modified versions of Snapchat are now available for Android users that include some of these missing features.',
+  slug:'iossnapchat',
   videoUrl: 'https://www.youtube.com/embed/w-KA29iASBs',
   videoId: 'w-KA29iASBs',
   imageUrl: SnapchatImage,
