@@ -18,7 +18,7 @@ export default function SnapChat() {
           dateUpdated={pageData?.dateUpdated}
         />
         <div className="grid  gap-4 py-4">
-          <div className=" space-y-4">
+          <div className="space-y-4">
             <div className="p-4 border border-black dark:border-white">
               <Image
                 src={pageData.imageUrl}

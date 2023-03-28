@@ -1,5 +1,5 @@
 import React from 'react'
-import PostLayout from 'components/PostLayout'
+// import PostLayout from 'components/PostLayout'
 import { iosMessengerData as pageData } from 'utils/data'
 import Breadcrumb from 'components/Breadcrumbs'
 import Image from 'next/image'
