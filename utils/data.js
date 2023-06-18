@@ -5,14 +5,16 @@ import iphoneInstagram from 'assets/iphoneInstagram.jpg'
 import instander from 'assets/instander.jpg'
 import instaflow from 'assets/instaflow.jpg'
 
+
+
 export let iosWhatsappData = {
   title: 'iOS WhatsApp On Any Android phone',
   description: 'As one of the most popular messaging apps in the world, WhatsApp is used by millions of people every day to stay in touch with friends, family, and colleagues. While the app is available on both iOS and Android devices, the user experience can differ between the two operating systems. In this blog, we will explore how to bring the iOS look and feel to WhatsApp on Android using FM WhatsApp, a modified version of the app.',
   slug: 'ioswhatsapp',
   dateUpdated: '23 Apr 2023',
   imageUrl: WhatsAppImage,
-  videoUrl: 'https://www.youtube.com/embed/PI6TyFVMfPQ?controls=0',
-  videoId: 'qcri_VF1KMA',
+  videoUrl: 'https://www.youtube.com/embed/bs0gKdypobg?controls=0',
+  videoId: 'bs0gKdypobg',
   dataLinks: [
     {
       title: 'iOS WhatsApp v9.71',
