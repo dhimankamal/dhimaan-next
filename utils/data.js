@@ -14,6 +14,10 @@ export let iosWhatsappData = {
   videoUrl: 'https://www.youtube.com/embed/PI6TyFVMfPQ?controls=0',
   videoId: 'qcri_VF1KMA',
   dataLinks: [
+    {
+      title: 'iOS WhatsApp v9.71',
+      link: 'https://www.dhimankamal.com/ios-whatsapp-v9-71/',
+    },
     
     {
       title: 'iOS WhatsApp For Android // v9.63',
@@ -43,10 +47,7 @@ export let iosWhatsappData = {
       title: 'iOS 15 WhatsApp For Android // v9.12.1',
       link: 'https://www.dhimankamal.com/2022/02/ios-15-whatsapp-for-android-v9121.html',
     },
-    {
-      title: 'iOS WhatsApp v9.71',
-      link: 'https://www.dhimankamal.com/ios-whatsapp-v9-71/',
-    },
+
   ],
   tags: 'Dhiman Kamal,iOS WhatsApp For Android,iPhone WhatsApp For Android,iOS WhatsApp On Android,iPhone 13 WhatsApp For Android,iOS 15 Theme For WhatsApp,iOS WhatsApp,iOS WhatsApp New Update,iPhone WhatsApp,WhatsApp Update,WhatsApp Hidden Features',
 }
