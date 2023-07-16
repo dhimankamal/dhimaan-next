@@ -129,6 +129,10 @@ export const instaFlowData = {
   imageUrl: instaflow,
   dataLinks: [
     {
+      title: 'Insta Flow v13',
+      link: 'https://www.dhimankamal.com/ios-instagram-for-android-instaflow-v13',
+    },
+    {
       title: 'Insta Flow v11',
       link: 'https://www.dhimankamal.com/2023/03/ios-instaflow-v11-ios-emojis-for.html',
     },
