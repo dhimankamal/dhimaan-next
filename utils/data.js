@@ -56,13 +56,17 @@ export let iosWhatsappData = {
 
 export let iosSnapchatData = {
   title: 'iOS SnapChat On Any Android phone',
-  dateUpdated: '13 Aug 2022',
+  dateUpdated: '23 July 2023',
   description: 'Snapchat is one of the most popular social media platforms, allowing users to share photos and videos with their friends and followers. While Snapchat is available for both iOS and Android devices, some users have expressed frustration with the differences between the two versions. Specifically, some features that are available on iOS are not available on Android. However, two modified versions of Snapchat are now available for Android users that include some of these missing features.',
   slug: 'iossnapchat',
   videoUrl: 'https://www.youtube.com/embed/w-KA29iASBs',
   videoId: 'w-KA29iASBs',
   imageUrl: SnapchatImage,
   dataLinks: [
+    {
+      title: 'iOS Snapchat (New Method)',
+      link: 'https://www.dhimankamal.com/iphone-ios-snapchat-for-android-with-ios-emojis-and-dark-mode/',
+    },
     {
       title: 'iOS Snapchat (v 11.92)',
       link: 'https://www.dhimankamal.com/2022/08/ios-snapchat-for-android-v1192.html',
